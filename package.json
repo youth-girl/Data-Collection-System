@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "http-server -a localhost:8000 -o",
-    "node-sass": "node-sass src/scss/style.scss src/style.css"
+    "gulp-sass":"gulp sass"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,7 @@
     "bower": "^1.7.9",
     "browser-sync": "^2.14.0",
     "gulp": "^3.9.1",
-    "gulp-sass": "^2.3.2"
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.0"
   }
 }
