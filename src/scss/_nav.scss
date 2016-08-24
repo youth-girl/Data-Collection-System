@@ -1,0 +1,26 @@
+.navWrapper{
+  .navList{
+    width: $defaultWidth;
+    height: $defaultHeight;
+  }
+  .navList{
+    li{
+      float: left;
+      width: 145px;
+      height: 28px;
+      line-height: 28px;
+      text-align: center;
+      border: 1px solid gainsboro;
+      font-size: 15px;
+      &:hover{
+        background: #5A98DA;
+        cursor: pointer;
+        border-bottom: 1px solid #5A98DA;
+      }
+    }
+    .active{
+      background: #5A98DA;
+      border-bottom: 1px solid #5A98DA;
+    }
+  }
+}

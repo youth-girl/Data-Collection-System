@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "http-server -a localhost:8000 -o",
-    "gulp-sass":"gulp sass"
+    "gulp-sass": "gulp sass",
+    "start": "http-server -a localhost -p 8001 -o",
+    "browserSnyc": "gulp browserSnyc"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,8 @@
     "browser-sync": "^2.14.0",
     "gulp": "^3.9.1",
     "gulp-sass": "^2.3.2",
-    "gulp-uglify": "^2.0.0"
+    "gulp-uglify": "^2.0.0",
+    "gulp-watch": "^4.3.9",
+    "http-server": "^0.9.0"
   }
 }

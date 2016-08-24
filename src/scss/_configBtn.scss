@@ -1,0 +1,52 @@
+.configBtnWrapper{
+  .configBtn{
+    float: left;
+    display: flex;
+    align-items: center;
+  }
+  .configInfoShow{
+    float: right;
+    display: flex;
+    background: #E7E9F3;
+    width: 165px;
+    height: 60px;
+    padding-left: 10px;
+  }
+  .configInfoShow{
+    li{
+      height: 60px;
+      width: 46px;
+      margin-right: 10px;
+    }
+    span{
+      display: block;
+      width: $defaultWidth;
+      height: 30px;
+    }
+    .showIsSuccess{
+      background: url("img/color.png");
+    }
+    .showSuccess{
+      background-position: 46px 0;
+    }
+    .showError{
+      background-position:0 0;
+    }
+  }
+  .configBtn{
+    li{
+      height: 50px;
+      width: 65px;
+      text-align: center;
+      line-height: 50px;
+      margin-right: 2px;
+      border: 1px solid grey;
+      border-radius: 12px;
+      font-size: 15px;
+      &:hover{
+        background: #5A98DA;
+        cursor: pointer;
+      }
+    }
+  }
+}

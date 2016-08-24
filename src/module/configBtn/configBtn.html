@@ -1,0 +1,23 @@
+<div ng-controller="ConfigBtnController as vm" class="configBtnWrapper">
+    <ul class="configBtn">
+        <li>连接</li>
+        <li ng-disabled="true">读取配置</li>
+        <li>保存配置</li>
+        <li>本地保存</li>
+        <li>本地读取</li>
+    </ul>
+    <ul class="configInfoShow">
+        <li class="config">
+            <span>配置</span>
+            <span class="showIsSuccess" ng-class="{showSuccess:!vm.configIsSuccess,showError:vm.configIsSuccess}"></span>
+        </li>
+        <li class="data">
+            <span>数据</span>
+            <span class="showIsSuccess" ng-class="{showSuccess:!vm.dataIsSuccess,showError:vm.dataIsSuccess}"></span>
+        </li>
+        <li class="communication">
+            <span>通信</span>
+            <span class="showIsSuccess" ng-class="{showSuccess:!vm.communcationIsSuccess,showError:vm.communcationIsSuccess}"></span>
+        </li>
+    </ul>
+</div>

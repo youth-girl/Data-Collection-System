@@ -1,0 +1,7 @@
+<div ng-controller="NavController as vm" class="navWrapper">
+    <ul class="navList">
+        <li ng-repeat="$item in vm.navList track by $index"
+            ng-click="vm.activeTab($index)"
+            ng-class="{active:$item.tabActive}">{{$item.tabName}}</li>
+    </ul>
+</div>

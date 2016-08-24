@@ -1,0 +1,18 @@
+.systemWrapper{
+  display: flex;
+  padding-top: 10px;
+  .portConfig{
+    width: calc(35% - 2px);
+    border: 1px solid gainsboro;
+    margin-right: 5px;
+  }
+  .lanConfig{
+    width: calc(40% - 2px);
+    border: 1px solid gainsboro;
+    margin-right: 5px;
+  }
+  .gprsConfig{
+    width: calc(25% - 2px);
+    border: 1px solid gainsboro;
+  }
+}
