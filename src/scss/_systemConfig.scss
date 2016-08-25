@@ -1,18 +1,62 @@
 .systemWrapper{
   display: flex;
-  padding-top: 10px;
+  margin-top: 10px;
+  height: 385px;
   .portConfig{
     width: calc(35% - 2px);
     border: 1px solid gainsboro;
     margin-right: 5px;
+    font-size: 15px;
   }
   .lanConfig{
-    width: calc(40% - 2px);
+    width: calc(38% - 2px);
     border: 1px solid gainsboro;
     margin-right: 5px;
+    font-size: 15px;
   }
-  .gprsConfig{
+  .connectConfig{
     width: calc(25% - 2px);
     border: 1px solid gainsboro;
+    font-size: 15px;
+  }
+}
+.portConfig{
+  span{
+    display: block;
+  }
+  .porttitle{
+    padding-left: 10px;
+    height: 15px;
+  }
+  .portContent{
+    margin: 2px 10px;
+    padding: 14px;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    >ul{
+      margin: 0px 2px;
+    }
+    input{
+      margin: 0px 17px;
+    }
+  }
+}
+.lanConfig{
+  span{
+    display: block;
+  }
+  .lanTitle{
+    margin-left: 5px;
+  }
+  .lanContent{
+    margin-left: 8px;
+    .setIP,ul{
+      margin-left: 10px;
+    }
+    ul{
+      input{
+        margin-left: 15px;
+      }
+    }
   }
 }

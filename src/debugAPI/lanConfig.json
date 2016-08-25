@@ -1,0 +1,7 @@
+{
+  "autoGet":false,
+  "handMoveGet":true,
+  "ip":"192.168.0.222",
+  "subnetMask":"255.255.255.0",
+  "defaultGetway":"192.168.0.1"
+}

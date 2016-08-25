@@ -1,0 +1,26 @@
+.dataShowWrapper{
+  table{
+    width: 100%;
+    font-size: 15px;
+  }
+  table,tr,td{
+    border: 1px solid gainsboro;
+    border-collapse: collapse;
+  }
+  tr{
+    width: 300px;
+  }
+  td{
+    text-align: center;
+  }
+  tr:nth-child(0){
+    width: 120px;
+  }
+  tr:nth-child(1) {
+    width: 80px;
+  }
+  tr:nth-child(2){
+    width: 100px;
+  }
+
+}

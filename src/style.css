@@ -36,8 +36,8 @@ li {
   border-top: 2px solid #5A98DA;
   position: relative; }
 
-.main .contentWrapper li {
-  height: 100%;
+.main .contentWrapper > li {
+  height: 400px;
   width: 100%;
   position: absolute;
   left: 0;
@@ -111,15 +111,72 @@ li {
 
 .systemWrapper {
   display: flex;
-  padding-top: 10px; }
+  margin-top: 10px;
+  height: 385px; }
   .systemWrapper .portConfig {
     width: calc(35% - 2px);
     border: 1px solid gainsboro;
-    margin-right: 5px; }
+    margin-right: 5px;
+    font-size: 15px; }
   .systemWrapper .lanConfig {
-    width: calc(40% - 2px);
+    width: calc(38% - 2px);
     border: 1px solid gainsboro;
-    margin-right: 5px; }
-  .systemWrapper .gprsConfig {
+    margin-right: 5px;
+    font-size: 15px; }
+  .systemWrapper .connectConfig {
     width: calc(25% - 2px);
-    border: 1px solid gainsboro; }
+    border: 1px solid gainsboro;
+    font-size: 15px; }
+
+.portConfig span {
+  display: block; }
+
+.portConfig .porttitle {
+  padding-left: 10px;
+  height: 15px; }
+
+.portConfig .portContent {
+  margin: 2px 10px;
+  padding: 14px;
+  border: 1px solid gainsboro;
+  border-radius: 5px; }
+  .portConfig .portContent > ul {
+    margin: 0px 2px; }
+  .portConfig .portContent input {
+    margin: 0px 17px; }
+
+.lanConfig span {
+  display: block; }
+
+.lanConfig .lanTitle {
+  margin-left: 5px; }
+
+.lanConfig .lanContent {
+  margin-left: 8px; }
+  .lanConfig .lanContent .setIP, .lanConfig .lanContent ul {
+    margin-left: 10px; }
+  .lanConfig .lanContent ul input {
+    margin-left: 15px; }
+
+.dataShowWrapper table {
+  width: 100%;
+  font-size: 15px; }
+
+.dataShowWrapper table, .dataShowWrapper tr, .dataShowWrapper td {
+  border: 1px solid gainsboro;
+  border-collapse: collapse; }
+
+.dataShowWrapper tr {
+  width: 300px; }
+
+.dataShowWrapper td {
+  text-align: center; }
+
+.dataShowWrapper tr:nth-child(0) {
+  width: 120px; }
+
+.dataShowWrapper tr:nth-child(1) {
+  width: 80px; }
+
+.dataShowWrapper tr:nth-child(2) {
+  width: 100px; }

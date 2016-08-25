@@ -1,0 +1,6 @@
+{
+  "communication":"GB/TI9582-2008 ModBus通信协议",
+  "baudRate":4800,
+  "dataBit":8,
+  "stopBit":1
+}

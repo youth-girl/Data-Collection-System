@@ -1,13 +1,62 @@
 <div class="systemWrapper" ng-controller="SystemConfigController as vm">
     <div class="portConfig">
-        <ul>
-            <li></li>
-        </ul>
+        <span class="porttitle">
+            采集端口配置
+        </span>
+        <span class="portContent">
+            <span>采集端口8000接口</span>
+            <ul>
+                <li>
+                    <span>通信协议</span>
+                    <input type="text" ng-model="vm.communication">
+                </li>
+                <li>
+                    <span>波特率</span>
+                    <input type="number" ng-model="vm.baudRate">
+                </li>
+                <li>
+                    <span>数据位</span>
+                    <input type="number" ng-model="vm.dataBit">
+                </li>
+                <li>
+                    <span>停止位</span>
+                    <input type="number" ng-model="vm.stopBit">
+                </li>
+            </ul>
+        </span>
     </div>
     <div class="lanConfig">
-        u
+        <span class="lanTitle">
+            LAN接口
+        </span>
+        <span class="lanContent">
+            <span>TCP/IP</span>
+            <span class="setIP">
+                <input type="checkbox" ng-model="autoGet">自动获取IP
+                <input type="checkbox" ng-model="handMoveGet">手动设置IP
+            </span>
+            <ul>
+                <li>
+                    <span>IP地址</span>
+                    <input type="text" ng-model="vm.ip">
+                </li>
+                <li>
+                    <span>子网掩码</span>
+                    <input type="text" ng-model="vm.subnetMask">
+                </li>
+                <li>
+                    <span>默认网关</span>
+                    <input type="text" ng-model="vm.defaultGetway">
+                </li>
+            </ul>
+        </span>
     </div>
-    <div class="gprsConfig">
-        i
+    <div class="connectConfig">
+        <span class="connectTitle">
+            连接状态显示
+        </span>
+        <span>
+            <textarea rows="20" cols="22" ng-model="vm.connectMes"></textarea>
+        </span>
     </div>
 </div>

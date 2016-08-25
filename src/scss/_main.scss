@@ -38,8 +38,8 @@ li{
     position: relative;
   }
   .contentWrapper{
-    li{
-      height: 100%;
+    >li{
+      height: 400px;
       width: 100%;
       position: absolute;
       left: 0;
