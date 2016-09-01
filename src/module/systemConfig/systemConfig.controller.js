@@ -7,6 +7,7 @@
         var vm = this,
             portRequest,
             lanRequest;
+
         portRequest = {
             method:'GET',
             url:'debugAPI/portConfig.json'
@@ -17,6 +18,7 @@
         };
         $http(portRequest)
             .then(portSuccess,portError);
+
         function portSuccess(response){
             if(response.status == 200){
                 var data = response.data;

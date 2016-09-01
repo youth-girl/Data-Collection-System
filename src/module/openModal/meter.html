@@ -1,0 +1,31 @@
+<div class="meter">
+    <ul ng-if="vm.type == '电表'" class="electricityMeter">
+        <li ng-repeat="$item in vm.meter track by $index"
+            ng-if="$item.type == '电表'">
+            <select ng-options="id as id for id in $item.idNumber"
+                    ng-model="vm.idNumber"
+                    class="idNumber">
+                <option>-- 请选择ID --</option>
+            </select>
+            <span class="elecMeterValue">
+                <label>电压 :&nbsp;&nbsp;&nbsp;&nbsp;</label><input ng-model="$item.value[vm.idNumber-1].voltage">
+                <label>电流 :&nbsp;&nbsp;&nbsp;&nbsp;</label><input ng-model="$item.value[vm.idNumber-1].current">
+                <label>功率 :&nbsp;&nbsp;&nbsp;&nbsp;</label><input ng-model="$item.value[vm.idNumber-1].power">
+            </span>
+        </li>
+    </ul>
+    <ul ng-if="vm.type == '水表'" class="waterMeter">
+        <li ng-repeat="$item in vm.meter track by $index"
+                ng-if="$item.type == '水表'">
+            <select ng-options="id as id for id in $item.idNumber"
+                    ng-model="vm.idNumber"
+                    class="idNumber">
+                <option>-- 请选择ID --</option>
+            </select>
+            <span class="waterMeterValue">
+                <label>水量 :&nbsp;&nbsp;&nbsp;&nbsp;</label><input ng-model="$item.value[vm.idNumber-1].waterConsumption">
+            </span>
+        </li>
+    </ul>
+    <button class="closeModal" ng-click="vm.close()">关闭</button>
+</div>

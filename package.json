@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "gulp-sass": "gulp sass",
     "start": "http-server -a localhost -p 8001 -o",
-    "browserSnyc": "gulp browserSnyc"
+    "browserSnyc": "gulp browserSnyc",
+    "dist": "gulp dist"
   },
   "repository": {
     "type": "git",
@@ -21,9 +22,12 @@
   },
   "homepage": "https://github.com/youth-girl/Data-Collection-System#readme",
   "devDependencies": {
+    "angular-local-storage": "^0.5.0",
     "bower": "^1.7.9",
     "browser-sync": "^2.14.0",
     "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-html-replace": "^1.6.1",
     "gulp-sass": "^2.3.2",
     "gulp-uglify": "^2.0.0",
     "gulp-watch": "^4.3.9",

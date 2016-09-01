@@ -2,7 +2,9 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/package.json" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/debugAPI/electricity.meter.json" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/debugAPI/portConfig.json" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/debugAPI/water.meter.json" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/dirctive/navContent.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/module/base/base.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/module/configBtn/configBtn.controller.js" charset="UTF-8" />
@@ -11,6 +13,8 @@
     <file url="file://$PROJECT_DIR$/src/module/dataShow/dataShow.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/module/nav/nav.controller.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/module/nav/nav.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/module/openModal/meter.controller.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/module/systemConfig/systemConfig.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/scss/_meter.scss" charset="UTF-8" />
   </component>
 </project>

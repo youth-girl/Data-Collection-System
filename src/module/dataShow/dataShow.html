@@ -1,18 +1,18 @@
 <div ng-controller="DataShow as vm" class="dataShowWrapper">
     <table>
         <thead>
-        <tr>
-            <td>日期</td>
-            <td>类型</td>
-            <td>功率/立方</td>
-        </tr>
+            <tr>
+                <td>仪表ID</td>
+                <td>类型</td>
+                <td>是否正常显示</td>
+            </tr>
         </thead>
         <tbody>
-        <tr ng-repeat="$item in vm.data track by $index">
-            <td>{{$item.date}}</td>
-            <td>{{$item.type}}</td>
-            <td>{{$item.other}}</td>
-        </tr>
+            <tr ng-repeat="$item in vm.data track by $index">
+                <td ng-click="vm.openDetail($index)">{{$item.id}}</td>
+                <td>{{$item.type}}</td>
+                <td>{{$item.other}}</td>
+            </tr>
         </tbody>
     </table>
 </div>

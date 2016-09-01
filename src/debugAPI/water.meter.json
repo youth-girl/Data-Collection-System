@@ -1,0 +1,26 @@
+{
+  "type":"水表",
+  "idNumber":[1,2,3,4,5],
+  "value":[
+    {
+      "id":1,
+      "waterConsumption":"1.00"
+    },
+    {
+      "id":2,
+      "waterConsumption":"2.00"
+    },
+    {
+      "id":3,
+      "waterConsumption":"3.00"
+    },
+    {
+      "id":4,
+      "waterConsumption":"4.00"
+    },
+    {
+      "id":5,
+      "waterConsumption":"5.00"
+    }
+  ]
+}

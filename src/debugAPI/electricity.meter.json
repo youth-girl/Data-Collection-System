@@ -1,0 +1,35 @@
+{
+  "type":"电表",
+  "idNumber":[1,2,3,4,5],
+  "value":[
+    {
+      "id":1,
+      "voltage":220,
+      "current":10,
+      "power":2200
+    },
+    {
+      "id":2,
+      "voltage":118,
+      "current":10,
+      "power":1180
+    },{
+      "id":3,
+      "voltage":116,
+      "current":10,
+      "power":1160
+    },
+    {
+      "id":4,
+      "voltage":110,
+      "current":10,
+      "power":1100
+    },
+    {
+      "id":5,
+      "voltage":220,
+      "current":10,
+      "power":2200
+    }
+  ]
+}

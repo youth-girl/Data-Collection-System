@@ -1,0 +1,45 @@
+.meter{
+  width: 598px;
+  height: 400px;
+  padding: 100px 70px;
+  background: #bcdff1;
+  position: relative;
+  .electricityMeter{
+    .idNumber{
+      width: 80px;
+      float: left;
+    }
+    .elecMeterValue{
+      display: block;
+      float: right;
+      width: 243px;
+      input{
+        margin-bottom: 25px;
+      }
+    }
+  }
+  .waterMeter{
+    .idNumber{
+      width: 80px;
+      float: left;
+    }
+    .waterMeterValue{
+      display: block;
+      float: right;
+      width: 243px;
+      input{
+        margin-bottom: 25px;
+      }
+    }
+  }
+  .closeModal{
+    position: absolute;
+    left: 455px;
+    top: 285px;
+    width: 74px;
+    height: 35px;
+    &:hover{
+      background: #036cdb;
+    }
+  }
+}
