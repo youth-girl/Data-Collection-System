@@ -6,7 +6,6 @@
 
     function BaseController($scope){
         $scope.$on('activeName',function(event,data){
-
         });
     }
 })();

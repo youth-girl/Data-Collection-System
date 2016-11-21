@@ -3,7 +3,8 @@
         gulpsass = require('gulp-sass'),
         gulpuglify = require('gulp-uglify'),
         gulpConcat = require('gulp-concat'),
-        gulpHtmlRelpace = require('gulp-html-replace');
+        gulpHtmlRelpace = require('gulp-html-replace'),
+        runSquesce = require('run-sequence');
     var dist = {
         'rootDirector':'dist',
         'js':[
@@ -34,13 +35,12 @@
     };
 
     /*gulp.task('dist',['js','html','img','css','htmlReplace']);*/
-    gulp.task('dist',function(){
-        gulp.src('src/index.html')
-            .pipe(gulpHtmlRelpace({
-                'css': 'styles.min.css',
-                'js': 'bundle.min.js'
-            }))
-            .pipe(gulp.dest('a/'));
+    gulp.task('dist',function(callback){
+        runSquesce(
+            ['js','html','img','css'],
+            'htmlReplace',
+            callback
+        );
     });
 
     gulp.task('js',function(){
@@ -67,10 +67,10 @@
     });
 
     gulp.task('htmlReplace',function(){
-        return gulp.src('dist/index.html')
+        return gulp.src('src/index.html')
             .pipe(gulpHtmlRelpace({
-                'css': 'styles.min.css',
-                'js': 'js/bundle.min.js'
+                'css': 'style.min.css',
+                'js': 'all.min.js'
             }))
             .pipe(gulp.dest('dist/'));
     });
@@ -88,5 +88,5 @@
         })
     });
     gulp.task('css-watch',function(){
-       return gulp.watch('src/scss/*.scss',['sass']);
+        return gulp.watch('src/scss/*.scss',['sass']);
     });
